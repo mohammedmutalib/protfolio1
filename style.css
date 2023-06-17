@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Roboto:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'poppins' , sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,1),rgba(0,0,0,0)),url(image/WhatsApp\ Image\ 2023-04-16\ at\ 4.29.26\ PM.jpeg);
+    background-size: cover;
+    background-position:center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-left: 60%;
+    margin-top: 30px;
+}
+nav ul li {
+     display: inline-block;
+     list-style: none;
+     margin: 10px 30px;
+ }
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #AFE1AF;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+ .header-text{
+    margin-top: 20%;
+    font-size: 30px;
+ }
+.header-text h1{
+    font-size: 60px;
+    margin-top: 8px;
+    margin-left: 3%;
+    font-family: 'EB Garamond', serif;
+}
+.header-text p{
+    margin-left: 3%;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+}
+.header-text h3{
+    font-family: 'EB Garamond', serif;
+}
+.header-text h1{
+    font-family: 'EB Garamond', serif;
+}
+.header-text h1 span{
+    color: #AFE1AF;
+    font-family: 'EB Garamond', serif;
+}
+#About{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 1));
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+#About .about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about img{
+    height: auto;
+    width: 450px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    border: 2px;
+    border-radius: 30px;
+}
+.about-text{
+    width: 550px;
+}
+.about-text h1{
+    color: #ffffff92;
+    font-size: 70px;    
+    text-transform: capitalize;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 6px;
+}
+.about-text h1 span{
+    color: #AFE1AF;
+    font-family: 'EB Garamond', serif;
+}
+.about-text h4 span{
+    color: #AFE1AF;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+.about-text h4{
+    color: #ffffff92;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: 2px; 
+    margin-left: 8%;
+}
+.about-text p{
+    color: #ffffff92;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+#Services{
+    background-color: #000000;
+    margin-top: 10%;
+    margin-bottom: 13%;
+}
+#Services h1{
+    align-items: center;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    line-height: 50px;
+    color: #f8f8ff;
+    letter-spacing: 8px;
+}
+.services{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap:60px;
+}
+.services .box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .box .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #f8f8ff;
+}
+.services .box .content .icon{
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out ;
+
+}
+.services .box:hover .content .icon{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e , 0 0 0 300px var(--clr);
+}
+
+-------------contact----------
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-right i {
+    color: #AFE1AF;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
